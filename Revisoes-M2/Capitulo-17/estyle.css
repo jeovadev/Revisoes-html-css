@@ -1,0 +1,186 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:ital,wght@0,200..800;1,200..800&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+:root {
+    --cor0: #00a9f159;
+    --cor1: #00A7F1;
+    --cor2: #0477BF;
+    --cor3: #FBCB0F;
+    --cor4: #0165a3d7;
+
+    --fonte-padrao: 'arial', serif;
+    --fonte-destaque: 'Fjalla One', serif;
+    --fonte-principal: 'Atkinson Hyperlegible Next', serif;
+}
+
+body {
+    background-color: var(--cor0);
+    font-family: var(--fonte-padrao);
+}
+
+header {
+    background-image: linear-gradient(to bottom, var(--cor1), var(--cor2));
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 30px;
+}
+
+header h1 {
+    font-family: var(--fonte-destaque);
+    margin-bottom: 20px;
+    font-size: 3em;
+    color: white;
+    text-shadow: 2px 2px 2px var(--cor2);
+}
+
+header > p {
+    color: rgba(255, 255, 255, 0.945);
+    font-size: 1em;
+    margin: auto;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.274);
+    max-width: 500px;
+}
+
+nav {
+    background-color: var(--cor4);
+    padding: 15px;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.185);;
+}
+
+nav a {
+    padding-right: 10px;
+    text-decoration: none;
+    color: white;
+    font-family: var(--fonte-padrao);
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    color: var(--cor2);
+    background-color: white;
+    padding: 5px;
+    transition: 0.5s;
+}
+
+main {
+    background-color: rgba(255, 255, 255, 0.849);
+    min-width: 350px;
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+main h1 {
+    font-family: var(--fonte-principal);
+    font-weight: bold;
+    font-size: 1.8em;
+    color: var(--cor2);
+    padding: 2px 2px 2px 6px;
+    background-image: linear-gradient(to right, var(--cor0), transparent);
+}
+
+main h2 {
+    font-family: var(--fonte-principal);
+    font-size: 1.4em;
+    padding: 2px 2px 2px 6px;
+    color: var(--cor2);
+    background-image: linear-gradient(to right, var(--cor0), transparent);
+}
+
+main h3 {
+    font-family: var(--fonte-principal);
+    color: var(--cor2);
+}
+
+strong {
+    color: var(--cor4);
+}
+
+main p {
+    margin: 15px 0px 15px 0px;
+    text-align: justify;
+    text-indent: 25px;
+    font-size: 1em;
+    line-height: 1.5em;
+}
+
+main a {
+    text-decoration: none;
+    color: var(--cor2);
+    font-weight: bold;
+}
+
+main a:hover {
+    text-decoration: underline;
+}
+
+img {
+    width: 100%;
+    margin: 30px 0px 30px 0px;
+}
+
+aside {
+    background-color: var(--cor0);
+    padding: 12px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.158);
+    margin: 30px 0px 30px 0px;
+}
+
+aside h3 {
+    text-align: center;
+    background-color: white;
+    padding: 10px;
+    border-radius: 7px;
+    font-size: 1.4em;
+    text-shadow: 0.5px 0.5px 0.3px var(--cor1);
+}
+
+aside p {
+    color: var(--cor4);
+    font-size: 1em;
+    text-shadow: 0.2px 0.2px var(--cor4);
+}
+
+aside ul {
+    list-style-type: none;
+    list-style-position: inside;
+    color: var(--cor4);
+    text-shadow: 0.2px 0.1px var(--cor4);
+}
+
+aside li::before {
+    content: '📖';
+    padding-right: 0.8em;
+}
+
+footer {
+    text-align: center;
+    background-color: var(--cor2);
+    color: white;
+    padding: 6px;
+    font-size: 0.8em;
+}
+
+footer a {
+    text-decoration: none;
+    color: var(--cor3);
+}
+
+footer a:hover {
+    text-decoration: underline;
+}

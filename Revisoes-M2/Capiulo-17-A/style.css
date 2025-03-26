@@ -1,0 +1,129 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Rowdies:wght@300;400;700&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+:root {
+    --cor1: #f06439de;
+    --cor2: #f0e764c9;
+    --cor3: #EFB445;
+    --cor4: #f0e76425;
+
+    --fonte-padrao: 'Arial', sans-serif;
+    --fonte-destacada: 'Rowdies', sans-serif;
+    --fonte-principal: ;
+}
+
+body {
+    background-color: white;
+    font-family: var(--fonte-padrao);
+}
+
+header {
+    text-align: center;
+    background-image: linear-gradient(to top, var(--cor3), var(--cor2));
+    padding: 30px 0px 30px 0px;
+    border-bottom-left-radius: 33.3%;
+    border-bottom-right-radius: 33.3%;
+}
+
+header h1 {
+    font-family: var(--fonte-destacada);
+    font-size: 2.2em;
+    font-weight: bold;
+    color: white;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.397);
+}
+
+main {
+    min-width: 400px;
+    max-width: 700px;
+    padding: 20px;
+    margin: auto;
+    margin-bottom: 40px;
+    background-color: rgb(255, 255, 255);
+}
+
+main div {
+    margin: 30px 0px 30px 0px;
+    border-radius: 20px;
+    background-color: var(--cor4);
+    padding: 20px;
+}
+
+
+main h2 {
+    font-family: var(--fonte-destacada);
+    font-weight: bold;
+    text-align: center;
+    color: var(--cor1);
+    padding: 10px;
+    border: solid;
+    border-color: var(--cor3);
+    border-radius: 10px;
+    background-color: white;
+}
+
+main h3 {
+    font-family: var(--fonte-destacada);
+}
+
+main p {
+    text-align: justify;
+    margin: 20px 0px 20px 0px;
+    text-indent: 25px;
+    line-height: 1.5em;
+}
+
+img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+img.mula {
+    padding: 3.5em;
+}
+
+strong {
+    color: var(--cor2);
+}
+
+aside {
+    background-color: rgba(0, 0, 0, 0.87);
+    color: white;
+    padding: 20px;
+    margin: 50px 0px 25px 0px;
+    border-radius: 20px;
+}
+
+aside a {
+    color: white;
+}
+
+aside a:hover {
+    text-decoration: none;
+    color: #2cc3ff;
+}
+
+footer {
+    text-align: center;
+    background-color: rgb(0, 0, 0);
+    font-size: 0.8em;
+    padding: 0.7em;
+    color: rgb(255, 255, 255);
+}
+
+footer a {
+    text-decoration: none;
+    color: #2cc3ff;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: white;
+}

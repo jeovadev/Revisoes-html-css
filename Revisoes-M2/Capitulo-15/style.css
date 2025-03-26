@@ -1,0 +1,152 @@
+@charset "UTF-8";
+
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+}
+
+p {
+    text-align: justify;
+    padding-bottom: 1em;
+}
+
+li {
+    color: rgb(9, 192, 9);
+    text-shadow: 1px 1px 1px rgba(6, 94, 6, 0.678);
+}
+
+
+.primeira {
+    text-align: center;
+    color: rgb(0, 255, 149);
+    text-shadow: 1px 1px 2px rgba(0, 255, 55, 0.219);
+}
+
+.segunda {
+    text-align: center;
+    color: rgb(18, 208, 255);
+    text-shadow: 1px 1px 2px rgba(28, 139, 167, 0.562);
+}
+
+.leve {
+color:  lightcoral;
+background-color: lightyellow;
+text-align: justify;
+}
+
+.pesado {
+    color: coral;
+    background-color: rgb(143, 143, 54);
+    text-align: center;
+    text-shadow: 1px 1px 2px rgba(216, 107, 67, 0.692);
+    font-size: 2em;
+}
+
+.leve1 {
+    color: rgb(128, 223, 255);
+    background-color: rgb(3, 19, 39);
+    text-align: justify;
+}
+
+.pesado1 {
+    color: blue;
+    background-color: gray;
+    text-align: center;
+    font-size: 2em;
+}
+
+#especial {
+color: lightblue;
+background-color: lightslategray;
+}
+
+#legal {
+color: lightgreen;
+background-color: lightslategray;
+}
+
+#divertido {
+color: lightpink;
+background-color: lightslategray;
+}
+
+#fundo1 {
+color: white;
+background-color: lightblue;
+}
+
+#fundo2 {
+    color: white;
+    background-color: lightgreen;
+}
+
+div > p {
+    display: none;
+}
+
+div:hover > p {
+display: block;
+color: black;
+background-color: lightblue;
+width: 300px;
+}
+
+div:hover {
+    color: rgb(255, 0, 0);
+    width: 300px;
+    
+}
+
+.teste2 > a {
+    display: none;
+}
+
+.teste2:hover > a {
+color: chocolate;
+display: block;
+background-color: rgb(107, 76, 41);
+width: 300px;
+}
+
+.teste2:hover {
+    color: green;
+    width: auto;
+    
+}
+
+.github, .instagram, .youtube, .bluesky {
+    text-decoration: none;
+    color: rgb(0, 191, 255);
+    text-shadow: 1px 1px 2px rgba(0, 191, 255, 0.63);
+}
+.github::before {
+    content: '☂ ';
+}
+
+.github::after {
+    content: ' ☂';
+}
+
+.instagram::before {
+    content: '☀ ';
+}
+
+.instagram::after {
+    content: ' ☀';
+}
+
+.youtube::before {
+    content: '★ ';
+}
+
+.youtube::after {
+    content: ' ★';
+}
+
+.bluesky::before {
+    content: '❤ ';
+}
+
+.bluesky::after {
+    content: ' ❤';
+}
