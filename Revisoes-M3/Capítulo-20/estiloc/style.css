@@ -1,0 +1,85 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap'); 
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-size: 1em;
+}
+
+:root {
+    --cor01: rgb(54, 54, 54);
+    --cor02: rgb(224, 224, 224);
+
+    --fonte-principal: 'Passion One', sans-serif;
+    --fonte-padrao: Arial, sans-serif;
+}
+
+body {
+    font-family: var(--fonte-padrao);
+    background-color: var(--cor01);
+    color: var(--cor02);
+}
+
+main {
+    margin: auto;
+}
+
+header {
+    padding: 50px 10px 50px 10px;
+    background-color: var(--cor02);
+}
+
+header h1 {
+    text-align: center;
+    font-family: var(--fonte-principal);
+    font-size: 8vh;
+    font-variant: small-caps;
+    color: var(--cor01);
+}
+
+section {
+    padding: 60px 15px 60px 15px;
+}
+
+section p {
+    text-align: justify;
+    line-height: 2em;
+    font-size: 2.2vh;
+    padding-bottom: 70px;
+    text-indent: 20px;max-width: 400px;
+}
+
+section#imagem {
+    background-image: url('https://images.unsplash.com/photo-1742328517290-d76a8a8c9611?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.308);
+    color: var(--cor01);
+    padding: 8em 0em 8em 1em;
+}
+
+section#imagem p {
+    background-color: rgba(255, 255, 255, 0.384);
+    padding: 15px;
+    border-radius: 20px 0px 20px 0px;
+}
+
+footer {
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 7px 0px 7px;
+    font-size: 0.8em;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
