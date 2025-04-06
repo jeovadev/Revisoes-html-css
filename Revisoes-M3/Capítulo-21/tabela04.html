@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela 04</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        section {
+            height: 20vh;
+            position: relative;
+        }
+
+        table {
+            position: absolute;
+            border-collapse: collapse;
+            left: 50%;
+            top: 50%;
+
+            transform: translate(-50%, -50%);
+        }
+
+        tr#header td {
+            background-color: rgb(100, 183, 255);
+            padding-bottom: 5px;
+            font-weight: bold;
+        }
+
+        td {
+            border: 1px solid black;
+            padding: 5px;
+        }
+
+    </style>
+</head>
+<body>
+        <main>
+            <h1>
+                Tabela com estado, pib, população
+            </h1>
+            <section>
+                <table>
+                    <tr id="header">
+                        <td>Estado</td>
+                        <td>PIB</td>
+                        <td>População</td>
+                    </tr>
+                    <tr>
+                        <td>Ceará</td>
+                        <td>1.000.456 R$</td>
+                        <td>8.567.400</td>
+                    </tr>
+                    <tr>
+                        <td>São Paulo</td>
+                        <td>79.347.000 R$</td>
+                        <td>26.000.000</td>
+                    </tr>
+                    <tr>
+                        <td>Rio de Janeiro</td>
+                        <td>57.897.540 R$</td>
+                        <td>17.647.000</td>
+                    </tr>
+                </table>
+            </section>
+        </main>
+</body>
+</html>
