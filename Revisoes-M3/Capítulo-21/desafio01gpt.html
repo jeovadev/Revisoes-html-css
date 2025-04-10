@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boletim Escolar</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            border-collapse: collapse;
+        }
+
+        caption {
+            font-size: 1.3em;
+            font-weight: bold;
+            padding: 12px;
+        }
+
+        td, th {
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        td.verde {
+            background-color: rgb(31, 160, 31);
+            color: white;
+        }
+
+        td.vermelho {
+            background-color: rgb(255, 57, 57);
+            color: white;
+        }
+
+        tfoot, thead {
+            background-color: rgb(81, 144, 160);
+            color: white;
+        }
+
+    </style>
+</head>
+<body>
+    <table>
+        <caption>
+            Boletim Escolar Completo com Situação Final
+        </caption>
+        <thead>
+            <tr>
+                <th scope="col">Matéria</th>
+                <th scope="col">Nota 1</th>
+                <th scope="col">Nota 2</th>
+                <th scope="col">Nota 3</th>
+                <th scope="col">Média</th>
+                <th scope="col">Faltas</th>
+                <th scope="col">Situação</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Matemática</td>
+                <td>7.5</td>
+                <td>8.0</td>
+                <td>6.5</td>
+                <td>7.3</td>
+                <td>2</td>
+                <td class="verde">Aprovado</td>
+            </tr>
+            <tr>
+                <td>Português</td>
+                <td>9.0</td>
+                <td>8.5</td>
+                <td>9.5</td>
+                <td>9.0</td>
+                <td>0</td>
+                <td class="verde">Aprovado</td>
+            </tr>
+            <tr>
+                <td>História</td>
+                <td>5.0</td>
+                <td>6.0</td>
+                <td>4.5</td>
+                <td>5.2</td>
+                <td>4</td>
+                <td class="vermelho">Reprovado</td>
+            </tr>
+            <tr>
+                <td>Geografia</td>
+                <td>6.0</td>
+                <td>7.0</td>
+                <td>6.5</td>
+                <td>6.5</td>
+                <td>1</td>
+                <td class="verde">Aprovado</td>
+            </tr>
+            <tr>
+                <td>Ciências</td>
+                <td>8.0</td>
+                <td>7.5</td>
+                <td>9.0</td>
+                <td>8.2</td>
+                <td>0</td>
+                <td class="verde">Aprovado</td>
+            </tr>
+            <tr>
+                <td>Inglês</td>
+                <td>4.0</td>
+                <td>5.0</td>
+                <td>3.5</td>
+                <td>4.2</td>
+                <td>5</td>
+                <td class="vermelho">Reprovado</td>
+            </tr>
+            <tr>
+                <td>Educação Física</td>
+                <td>10.0</td>
+                <td>9.5</td>
+                <td>10.0</td>
+                <td>9.8</td>
+                <td>0</td>
+                <td class="verde">Aprovado</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <th colspan="4" scope="colgroup">Média Geral</th>
+            <th scope="col">7.2</th>
+            <th scope="col">12</th>
+            <th scope="col">Aprovado</th>
+        </tfoot>
+    </table>
+</body>
+</html>
