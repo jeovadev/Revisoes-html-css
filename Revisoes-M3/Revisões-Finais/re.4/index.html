@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio de Revisão 04</title>
+    <style>
+        body {
+            font-family: arial;
+        }
+
+        table {
+            border-collapse: collapse;
+            padding: 10px;
+        }
+
+        caption {
+            font-size: 1.5em;
+            padding: 20px;
+            font-weight: bold;
+        }
+
+        td, th {
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <table>
+        <caption>
+            Quadro de Resultado de Vendas
+        </caption>
+        <thead>
+            <tr>
+                <th scope="col">Vendedor</th>
+                <th scope="col">Produto</th>
+                <th scope="col"> Janeiro</th>
+                <th scope="col">Fevereiro</th>
+                <th scope="col">Março</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th rowspan="2" scope="rowgroup">Ana</th>
+                <td>Camisas</td>
+                <td>120</td>
+                <td>140</td>
+                <td>160</td>
+            </tr>
+            <tr>
+                <td>Calças</td>
+                <td>80</td><td>75</td>
+                <td>90</td>
+            </tr>
+            <tr>
+                <th rowspan="2" scope="rowgroup">Bruno</th>
+                <td>Camisas</td>
+                <td>100</td>
+                <td>110</td>
+                <td>130</td>
+            </tr>
+            <tr>
+                <td>Calças</td>
+                <td>60</td>
+                <td>70</td>
+                <td>85</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

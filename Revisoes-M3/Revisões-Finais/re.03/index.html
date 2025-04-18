@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio de Revisão 03</title>
+    <style>
+        body {
+            font-family: arial;
+        }
+
+        table {
+            border-collapse: collapse;
+            padding: 10px;
+        }
+
+        caption {
+            font-size: 1.5em;
+            padding: 20px;
+            font-weight: bold;
+        }
+
+        td, th {
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <table>
+        <caption>
+            Tabela de Horários de Aulas
+        </caption>
+        <thead>
+            <tr>
+                <th scope="col">Horário</th>
+                <th scope="col">Segunda</th>
+                <th scope="col">Terça</th>
+                <th scope="col">Quarta</th>
+                <th scope="col">Quinta</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">07h-08h</th>
+                <td rowspan="2">Matemática</td>
+                <td rowspan="2">Português</td>
+                <td rowspan="2">Matemática</td>
+                <td rowspan="2">História</td>
+            </tr>
+            <tr>
+                <th>08h-09h</th>
+            </tr>
+            <tr>
+                <th scope="row">09h-10h</th>
+                <td colspan="2">Ciências</td>
+                <td>Geografia</td>
+                <td>E.Física</td>
+            </tr>
+            <tr>
+                <th scope="row">10h-10h15</th>
+                <td colspan="4">Intervalo</td>
+            </tr>
+            <tr>
+                <th scope="row">10h15-11h</th>
+                <td colspan="2">Inglês</td>
+                <td>Artes</td>
+                <td>Redação</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
