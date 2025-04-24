@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudo de Iframes</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a {
+            text-decoration: none;
+            color: rgb(0, 144, 228);
+        }
+
+        a::after {
+            content: '';
+            padding: 5px;
+        }
+
+        iframe {
+            width: 95vw;
+            height: 600px;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Estudo de Iframes - Revisão 01</h1>
+    <p>
+        Nesse exemplo eu vou mostrar alguns dos meus projetos antigos que produzi ao decorrer dos meus
+        estudos de html5 e css3. clique nos links abixo para ver a exibição do projeto no iframe abaixo.
+    </p>
+    <ul type="square">
+        <li><a href="https://jeovadev.github.io/projeto-cordel/" target="tela">Projeto Cordel</a></li>
+        <li><a href="https://jeovadev.github.io/projeto-android/" target="tela">Projeto Android</a></li>
+        <li><a href="https://jeovadev.github.io/Materia-Enem2025/" target="tela">Projeto Enem 2025</a></li>
+    </ul>
+
+    <iframe name="tela" srcdoc="<h1>Clique em um dos links acima e veja um dos meus projeto sendo exibido aqui nesse frame!!!</h1> <img src='imagens/gatinho-png.png'>">
+        <p>[Seu navegador não suporta a exibição de iframes]</p>
+    </iframe>
+</body>
+</html>
