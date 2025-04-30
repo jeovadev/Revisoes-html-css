@@ -14,13 +14,19 @@
     <h1>
         Formulário ENEM 2025
     </h1>
-    <form>
-        <p>Nome: <input type="text"></p>
-        <p>Sobrenome: <input type="text">:</p>
-        <p>Data de Nascimento: <input type="text"></p>
-        <p>CPF: <input type="text"></p>
-        <p>Endereço: <input type="text"></p>
-        <p>UF de nascimento: <input type="text"></p>
+    <form action="cadastro.php" autocomplete="off">
+        <p><label for="inome">Nome:</label> 
+            <input type="text" id="inome"></p>
+        <p><label for="isobrenome">Sobrenome:</label> 
+            <input type="text" id="isobrenome"></p>
+        <p><label for="idata">Data de Nascimento:</label>
+             <input type="text" id="idata"></p>
+        <p><label for="icpf">CPF:</label> 
+            <input type="text" id="icpf"></p>
+        <p><label for="iendereco">Endereço:</label> 
+            <input type="text" id="iendereco"></p>
+        <p><label for="iuf">UF de nascimento:</label> 
+            <input type="text" id="iuf"></p>
         <p><input type="submit" value="Inscreva-se"></p>
     </form>
 </body>
