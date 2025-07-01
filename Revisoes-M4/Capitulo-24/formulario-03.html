@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Cadastro de Vacina</h1>
+
+    <form action="cadastro.php" method="post" autocomplete="on">
+
+        <p>
+            <label for="inome">Nome:</label>
+            <input type="text" name="Nome" id="inome" required minlength="5" maxlength="15" placeholder="nome..." size="10" autocomplete="name">
+        </p>
+
+        <p>
+            <label for="isobrenome">Sobrenome:</label>
+            <input type="text" name="sobrenome" id="isobrenome" required minlength="5" maxlength="15" placeholder="sobrenome..." size="10" autocomplete="family-name">
+        </p>
+
+        <p>
+            <label for="igenero">Gênero:</label>
+            <input type="text" name="genero" id="igenero" required minlength="8" maxlength="10" placeholder="gênero..." size="10" autocomplete="sex">
+        </p>
+
+        <p>
+            <label for="iidade">Idade:</label>
+            <input type="number" name="idade" id="iidade" required min="12" max="80" placeholder="idade...">
+        </p>
+
+        <p>
+            <label for="idata">Data de Nascimento:</label>
+            <input type="date" name="data" id="idata" required value="2025-07-01">
+        </p>
+
+        <p>
+            <label for="ihora">Hora de Nascimento:</label>
+            <input type="time" name="hora" id="ihora" required value="00:00">
+        </p>
+
+        <p>
+            <input type="submit" value="Enviar dados">
+            <input type="reset" value="Limpar dados">
+        </p>
+    </form>
+</body>
+</html>

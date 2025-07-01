@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ficha de Cadastro</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Ficha de Cadastro</h1>
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <p>
+            <label for="inome">Nome completo:</label>
+            <input type="text" name="nome" id="inome" required minlength="10" maxlength="40" placeholder="nome completo..." size="15" autocomplete="nickname">
+        </p>
+
+        <p>
+            <label for="iemail">Email:</label>
+            <input type="email" name="email" id="iemail" required placeholder="email..." autocomplete="email">
+        </p>
+
+        <p>
+            <label for="isenha">Senha:</label>
+            <input type="password" name="senha" id="isenha" required minlength="8" maxlength="20" placeholder="senha..." size="8" autocomplete="current-password">
+        </p>
+
+        <p>
+            <label for="iidade">Idade:</label>
+            <input type="number" name="idade" id="iidade" required min="0" max="100" placeholder="idade...">
+        </p>
+
+        <p>
+            <input type="submit" value="Cadastrar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
